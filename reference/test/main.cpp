@@ -16,6 +16,9 @@
 #include "skeletal/mesh.hpp"
 #include "pipeline/mesh.hpp"
 
+#include "skeletal/animator.hpp"
+// #include "pipeline/animator.hpp"
+
 #include "gltf/tinygltf_helper.h"
 
 void processCameraInput(GLFWwindow* window, FirstPersonCamera* camera);
@@ -90,6 +93,18 @@ int main(void)
     }
 
     WireframeMeshPipeline pipeline_mesh(&shader_mesh, &camera, &mesh);
+
+    SkeletalAnimator anim;
+    std::string warn_anim, err_anim;
+    if (!anim.loadFromTinyGLTF(model, warn, err)) {
+        std::cout << "AnimationLoaderError: " << err << std::endl;
+    };
+    if (!warn.empty()) {
+        std::cout << "AnimationLoaderWarning: " << warn << std::endl;
+        warn.clear();
+    }
+    //  WireframeMeshPipeline pipeline_mesh(&shader_mesh, &camera, &mesh);
+    
     /***************************my code end*************************/
     ///////////////
 

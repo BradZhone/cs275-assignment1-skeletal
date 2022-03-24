@@ -1,6 +1,9 @@
 #include "skeletal/animator.hpp"
 
 #include "gltf/tinygltf_helper.h"
+#include <glm/glm.hpp>
+#include <glm/gtc/quaternion.hpp>
+#include <glm/gtx/quaternion.hpp>
 
 bool SkeletalAnimator::
 loadFromTinyGLTF(
@@ -74,6 +77,8 @@ loadFromTinyGLTF(
                  * fTime
                  * quat: x, y, z, w
                  * */
+                Keyframes temp = {channel.target_node, fTime, glm::quat(x,y,z,w)};
+                this->keyframes.push_back(temp);
             }
         }
     }

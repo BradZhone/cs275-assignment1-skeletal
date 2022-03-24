@@ -6,6 +6,21 @@
 #pragma once
 
 #include <tiny_gltf.h>
+#include <glm/glm.hpp>
+#include <glm/gtc/quaternion.hpp>
+#include <glm/gtx/quaternion.hpp>
+
+#include <iostream>
+#include <vector>
+
+/***********************my code*****************************/
+struct Keyframes {
+    unsigned int target_nodes;
+    float fTime;
+    glm::quat orientation;
+    
+};
+/***********************my code end*****************************/
 
 class SkeletalAnimator
 {
@@ -14,6 +29,11 @@ class SkeletalAnimator
     // generate animations by interpolation
     ////////////
 
+/***********************my code*****************************/
+private:
+    std::vector<Keyframes> keyframes;
+
+/***********************my code end*****************************/
 public:
     /** 
      * Some reference code to load data with tinygltf
