@@ -1,0 +1,11 @@
+# ninja log v5
+10	2478	6694916645976651	CMakeFiles/libmain.dir/src/shader/shader.cpp.obj	f2f4f8c329b4921e
+19	2488	6694916646076649	CMakeFiles/libmain.dir/src/skeletal/animator.cpp.obj	8c169c5cf33a649e
+6	2649	6694916647716645	CMakeFiles/libmain.dir/src/camera/fpc.cpp.obj	b1501bdc695d7c71
+31	2748	6694916648746630	CMakeFiles/libmain.dir/src/pipeline/skeleton.cpp.obj	e37e23a3330c4bb8
+27	2929	6694916650546626	CMakeFiles/libmain.dir/src/skeletal/mesh.cpp.obj	92062db65cb3eb2b
+15	3532	6694916656582600	CMakeFiles/libmain.dir/src/skeletal/skeleton.cpp.obj	1f7fc98879bd385d
+1	3787	6694916659122613	CMakeFiles/tinygltfExamples.dir/test/tinygltfExamples.cpp.obj	3ba68b8be2585ece
+23	3981	6694916661052596	CMakeFiles/libmain.dir/src/gltf/tinygltf_helper.cpp.obj	33983f0924b072cb
+3981	4056	6694916661782590	libmain.lib	509e3bda5df66b9c
+4056	4677	6694916665244812	tinygltfExamples.exe	3ddc3c30aba33ebd

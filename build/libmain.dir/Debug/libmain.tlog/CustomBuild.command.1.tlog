@@ -1,0 +1,10 @@
+^E:\PROJECTS\OPENGL\ASSIGNMENT1-SKELETAL-BRADZHONE-MAIN\REFERENCE\CMAKELISTS.TXT
+setlocal
+D:\Develop\CMake\bin\cmake.exe -SE:/Projects/OpenGL/assignment1-skeletal-BradZhone-main/reference -BE:/Projects/OpenGL/assignment1-skeletal-BradZhone-main/build --check-stamp-file E:/Projects/OpenGL/assignment1-skeletal-BradZhone-main/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

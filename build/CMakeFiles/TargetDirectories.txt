@@ -1,0 +1,5 @@
+E:/Projects/OpenGL/assignment1-skeletal-BradZhone-main/build/CMakeFiles/libmain.dir
+E:/Projects/OpenGL/assignment1-skeletal-BradZhone-main/build/CMakeFiles/main.dir
+E:/Projects/OpenGL/assignment1-skeletal-BradZhone-main/build/CMakeFiles/tinygltfExamples.dir
+E:/Projects/OpenGL/assignment1-skeletal-BradZhone-main/build/CMakeFiles/ALL_BUILD.dir
+E:/Projects/OpenGL/assignment1-skeletal-BradZhone-main/build/CMakeFiles/ZERO_CHECK.dir

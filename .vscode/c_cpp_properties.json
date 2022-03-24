@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "GCC",
+            "includePath": [
+                "${workspaceFolder}/reference/**",
+                "${workspaceFolder}/reference/include/**",
+                "${vcpkgRoot}/x64-windows/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "D:/Develop/Mingw/mingw64/bin/g++.exe"
+        }
+    ],
+    "version": 4
+}

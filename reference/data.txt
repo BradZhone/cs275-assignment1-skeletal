@@ -1,0 +1,142 @@
+MeshLoaderWarning: 
+No UVs found in mesh primitive 0
+Skeleton Joints 4 Loaded: Bone
+Position: 0 -5 0
+Quaternion: 0 0 0 1
+Children: 3 
+Skeleton Joints 3 Loaded: Bone.001
+Position: 0 2 0
+Quaternion: 0 0 0 1
+Children: 2
+Skeleton Joints 2 Loaded: Bone.002
+Position: 0 2 0
+Quaternion: 0 0 0 1
+Children: 1
+Skeleton Joints 1 Loaded: Bone.003
+Position: 0 2 0
+Quaternion: 0 0 0 1
+Children: 0
+Skeleton Joints 0 Loaded: Bone.004
+Position: 0 2 0
+Quaternion: 0 0 0 1
+Children:
+Animation Loaded for node 4 at 0 with data 0 0 0 1
+Animation Loaded for node 4 at 0.416667 with data 0.0914278 -0.257104 -0.322336 0.906442
+Animation Loaded for node 4 at 0.833333 with data 0.0605387 -0.339869 -0.164582 0.923979
+Animation Loaded for node 4 at 1.25 with data -4.71332e-16 -1.14683e-08 -0.335052 0.9422
+Animation Loaded for node 4 at 1.66667 with data 1.27466e-15 9.80465e-09 0.286447 0.958096
+Animation Loaded for node 4 at 2.08333 with data -0.0539627 0.098451 -0.329519 0.93745
+Animation Loaded for node 4 at 2.5 with data 0.171865 -0.964865 -0.034852 0.195662
+Animation Loaded for node 4 at 2.91667 with data -4.71332e-16 -1.14683e-08 -0.335052 0.9422
+Animation Loaded for node 4 at 3.33333 with data 0.0914278 -0.257104 -0.322336 0.906442
+Animation Loaded for node 4 at 3.75 with data 0.0605387 -0.339869 -0.164582 0.923979
+Animation Loaded for node 4 at 4.16667 with data 0.0115889 -0.834677 -0.341683 0.431779
+Animation Loaded for node 4 at 4.58333 with data -0.0732709 0.206045 -0.326942 0.919394
+Animation Loaded for node 4 at 5 with data 0 0 0 1
+Animation Loaded for node 3 at 0 with data 0 0 0 1
+Animation Loaded for node 3 at 0.416667 with data 0.0721107 -0.144046 0.214595 0.963327
+Animation Loaded for node 3 at 0.833333 with data 0.146209 -0.145647 -0.412137 0.887442
+Animation Loaded for node 3 at 1.25 with data 1.53554e-15 7.44249e-09 0.217435 0.976075
+Animation Loaded for node 3 at 1.66667 with data -3.99202e-15 -1.56099e-08 -0.456049 0.889955
+Animation Loaded for node 3 at 2.08333 with data 0.364511 -0.348624 0.207182 0.838253
+Animation Loaded for node 3 at 2.5 with data -0.00385015 0.322647 -0.23887 0.915874
+Animation Loaded for node 3 at 2.91667 with data 1.53554e-15 7.44249e-09 0.217435 0.976075
+Animation Loaded for node 3 at 3.33333 with data 0.0721107 -0.144046 0.214595 0.963327
+Animation Loaded for node 3 at 3.75 with data 0.146209 -0.145647 -0.412137 0.887442
+Animation Loaded for node 3 at 4.16667 with data -0.0886641 -0.044386 -0.0155884 0.99495
+Animation Loaded for node 3 at 4.58333 with data -0.0975687 0.475633 0.123513 0.865447
+Animation Loaded for node 3 at 5 with data 0 0 0 1
+Animation Loaded for node 2 at 0 with data 0 0.00568148 0 0.999984
+Animation Loaded for node 2 at 0.416667 with data -0.0161681 -0.12421 0.34387 0.930626
+Animation Loaded for node 2 at 0.833333 with data 0.215742 -0.179312 0.333729 0.89996
+Animation Loaded for node 2 at 1.25 with data -0.00197098 0.00532866 0.346907 0.937883
+Animation Loaded for node 2 at 1.66667 with data 0.00215977 0.00525495 -0.380136 0.924913
+Animation Loaded for node 2 at 2.08333 with data 0.0878258 0.101308 0.26911 0.953731
+Animation Loaded for node 2 at 2.5 with data -0.257974 0.222052 0.325319 0.882219
+Animation Loaded for node 2 at 2.91667 with data -0.00197098 0.00532866 0.346907 0.937883
+Animation Loaded for node 2 at 3.33333 with data -0.0161681 -0.12421 0.34387 0.930626
+Animation Loaded for node 2 at 3.75 with data 0.215742 -0.179312 0.333729 0.89996
+Animation Loaded for node 2 at 4.16667 with data 0.0363831 0.348365 -0.205735 0.913779
+Animation Loaded for node 2 at 4.58333 with data -0.288044 0.0739905 0.442025 0.846268
+Animation Loaded for node 2 at 5 with data 0 0.00568148 0 0.999984
+Animation Loaded for node 1 at 0 with data 0 0.00561771 0 0.999984
+Animation Loaded for node 1 at 0.416667 with data -0.153253 -0.159176 0.259356 0.940165
+Animation Loaded for node 1 at 0.833333 with data 0.206161 -0.154433 -0.358915 0.897122
+Animation Loaded for node 1 at 1.25 with data -0.004561 0.00541126 0.268572 0.963234
+Animation Loaded for node 1 at 1.66667 with data 0.00404699 0.00545581 -0.238305 0.971167
+Animation Loaded for node 1 at 2.08333 with data -0.322446 -0.172831 0.0721095 0.927878
+Animation Loaded for node 1 at 2.5 with data -0.208394 0.176043 -0.364043 0.890535
+Animation Loaded for node 1 at 2.91667 with data -0.004561 0.00541126 0.268572 0.963234
+Animation Loaded for node 1 at 3.33333 with data -0.153253 -0.159176 0.259356 0.940165
+Animation Loaded for node 1 at 3.75 with data 0.206161 -0.154433 -0.358915 0.897122
+Animation Loaded for node 1 at 4.16667 with data 0.0879298 -0.0833713 0.549887 0.826403
+Animation Loaded for node 1 at 4.58333 with data -0.328675 -0.208141 0.11913 0.913487
+Animation Loaded for node 1 at 5 with data 0 0.00561771 0 0.999984
+Animation Loaded for node 0 at 0 with data -3.21262e-05 0.00196226 0.00130777 0.999997
+Animation Loaded for node 0 at 0.416667 with data -0.190575 -0.0626289 0.217136 0.955307
+Animation Loaded for node 0 at 0.833333 with data 0.318371 0.0276151 -0.337822 0.885298
+Animation Loaded for node 0 at 1.25 with data -0.00555364 0.00191143 0.226073 0.974093
+Animation Loaded for node 0 at 1.66667 with data 0.0139553 0.00161464 -0.568083 0.822852
+Animation Loaded for node 0 at 2.08333 with data -0.0346414 -0.000607709 0.171365 0.984598
+Animation Loaded for node 0 at 2.5 with data -0.289737 -0.0231625 -0.354121 0.888883
+Animation Loaded for node 0 at 2.91667 with data -0.00555364 0.00191143 0.226073 0.974093
+Animation Loaded for node 0 at 3.33333 with data -0.190575 -0.0626289 0.217136 0.955307
+Animation Loaded for node 0 at 3.75 with data 0.318371 0.0276151 -0.337822 0.885298
+Animation Loaded for node 0 at 4.16667 with data 0.363944 0.130346 0.217149 0.896327
+Animation Loaded for node 0 at 4.58333 with data -0.00555364 0.00191143 0.226073 0.974093
+Animation Loaded for node 0 at 5 with data -3.21262e-05 0.00196226 0.00130777 0.999997
+Loading Mesh with 1632 indices.
+Loading Mesh with 824 vertices.
+GeometryLoaderWarning:
+No UVs found in mesh primitive 0
+Num of Joints: 5
+Root Node: 4 Bone
+3 Bone.001
+2 Bone.002
+1 Bone.003
+0 Bone.004
+Bone->Bone.001
+Bone.001->Bone.002
+Bone.002->Bone.003
+Bone.003->Bone.004
+
+
+阅读https://learnopengl-cn.github.io/01%20Getting%20started/04%20Hello%20Triangle/ 以及一部分写Shader的知识 (非必须，根据你的实现决定) 就能够掌握足以完成此次作业的OpenGL知识了，更多的内容比如摄像机和Shader所需要的代码我们已经提供了，可以先直接使用而不必重新学习。
+关于系统设计，你可以参考发在Piazza上的Tutorial Slides，分为三个模块进行设计。先完成每个模块的功能，然后尝试将三个模块连接起来。
+1.你可以先尝试阅读并理解skeletal/skeleton，设计一个数据结构把glTF模型读取并储存在某种数据结构中，根据你的数据结构实现FK算法计算节点位置，然后通过修改pipeline/skeleton将骨骼渲染出来。
+2.接下来可以尝试实现mesh的渲染部分，在理解skeletal/mesh.h所储存数据的含义后尝试参考pipeline/skeleton实现另一个pipeline比如说pipeline/mesh来实现对于mesh的渲染，当然只需要进行像骨骼那样的框架渲染就足够了。
+3.然后可以尝试阅读并理解skeletal/animator，设计一个数据结构可以保存关键帧并完成对四元数的插值，即输入为时间，输出为插值得到的四元数
+4.最后是Skinning的部分，你需要在skeletal/skeleton中计算并储存inverseBindMatrix以在LBS算法中使用，这个矩阵可以在load完后进行完第一次FK后进行计算。
+5.Skinning中的LBS算法可以在Vertex Shader中完成，也可以在你自己实现的pipeline/mesh中完成。
+ 
+做完以上四步你就基本完成了每个模块的设计，然后将这些模块串联起来即可。
+其中1,2,3中的内容相对独立且我个人认为的难度排序1>3>2，如果你感觉直接从1开始有些困难并感觉气馁，可以尝试由简到难进行实现。
+另外我很推荐阅读参考 https://veeenu.github.io/blog/implementing-skeletal-animation/ 与 https://learnopengl.com/Guest-Articles/2020/Skeletal-Animation 中的内容与代码帮助你完成这一次的课程作业。
+ 
+总结一下这次的作业，你需要进行系统设计然后分别实现三个算法，
+Front Kinematics (FK)，Linear Blend Skinning (LBS)，以及(Keyframe Interpolation)即关键帧插值，
+如果你有三维变换与数据结构的基础，那理解并选择合适的数据结构来实现这三个算法并应当不会太困难。
+如果你对于三维变换不太熟悉，推荐你阅读学习https://learnopengl-cn.github.io/01%20Getting%20started/07%20Transformations/ 。
+如果你是对于系统设计无从下手，那我推荐从输入输出的角度进行思考，即完成这个任务我有什么作为输入，以及我需要什么作为输出，通过这个角度先设计好每个类的函数接口，然后再具体填充每个函数。你可以尽情参考各种开源实现中的设计与实现，或者针对特定算法搜索教程帮助你设计数据结构并实现算法。
+
+
+jointFinalTrans = parentTransform * animateJointTransform * inverseBindMatrix;
+
+Performing FK
+Local Transform = Translation * Rotation * Scale
+Current Transform = Parent Transform * Local Transform
+[Extra] Performing IK
+
+Binding Rest Pose
+Inverse of the Transform Matrices of Joints at Rest Pose
+Linear Blending Skinning
+
+Save & Find Keyframes to 
+Normalized Linear Interpolation of Quaternion
+[Extra] Better Interpolation Method
+SLerp
+
+
+
+TODO:
+skeletal 中的mesh。hpp不用看loadFromTinyGLTF，他是在main中调用的，只需要看他的private变量

@@ -1,0 +1,10 @@
+^E:\PROJECTS\OPENGL\ASSIGNMENT1-SKELETAL-BRADZHONE-MAIN\BUILD\CMAKEFILES\B80416ED1FA3CFC7B44114BE047D1FF1\GENERATE.STAMP.RULE
+setlocal
+D:\Develop\CMake\bin\cmake.exe -SE:/Projects/OpenGL/assignment1-skeletal-BradZhone-main/reference -BE:/Projects/OpenGL/assignment1-skeletal-BradZhone-main/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Projects/OpenGL/assignment1-skeletal-BradZhone-main/build/skeletal-animation.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
