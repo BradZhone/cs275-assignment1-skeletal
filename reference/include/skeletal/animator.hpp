@@ -12,13 +12,19 @@
 
 #include <iostream>
 #include <vector>
+/***********************my code*****************************/
+#include <skeletal/skeleton.hpp>
+/***********************my code end*****************************/
+
 
 /***********************my code*****************************/
 struct Keyframes {
-    unsigned int target_nodes;
-    float fTime;
-    glm::quat orientation;
-    
+    glm::quat orientation={0,0,0,1};
+    glm::vec3 positions;
+};
+
+struct TimeTable {
+    std::vector < float > ftime; // represent the time of each keyframe
 };
 /***********************my code end*****************************/
 
@@ -31,18 +37,16 @@ class SkeletalAnimator
 
 /***********************my code*****************************/
 private:
-    std::vector<Keyframes> keyframes;
-
+    std::vector< std::vector< Keyframes > > keyframes; // using index to represent the node id.
+    TimeTable timetable;
 /***********************my code end*****************************/
 public:
-    /** 
-     * Some reference code to load data with tinygltf
-     * Check the gltf 2.0 specification if you feel confused
-     * https://www.khronos.org/registry/glTF/specs/2.0/glTF-2.0.html 
-     * */
     bool loadFromTinyGLTF(
         const tinygltf::Model& mdl,
         std::string& warn,
-        std::string& err
+        std::string& err,
+        Skeleton* _skel // using skeleton.getjoints() to get the data of original data of joints.
     );
+    const auto& getKeyframes() const { return keyframes; }
+    const auto& getTimetable() const { return timetable; }
 };

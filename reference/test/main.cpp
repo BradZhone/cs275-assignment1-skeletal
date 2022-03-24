@@ -79,7 +79,7 @@ int main(void)
         warn.clear();
     }
     
-    WireframeSkeletonPipeline pipeline_skel(&shader_skel, &camera, &skel);
+    // WireframeSkeletonPipeline pipeline_skel(&shader_skel, &camera, &skel);
 
     /***************************my code*************************/
     BoneWeightedMesh mesh;
@@ -96,7 +96,7 @@ int main(void)
 
     SkeletalAnimator anim;
     std::string warn_anim, err_anim;
-    if (!anim.loadFromTinyGLTF(model, warn, err)) {
+    if (!anim.loadFromTinyGLTF(model, warn, err, &skel)) {
         std::cout << "AnimationLoaderError: " << err << std::endl;
     };
     if (!warn.empty()) {
@@ -104,7 +104,7 @@ int main(void)
         warn.clear();
     }
     //  WireframeMeshPipeline pipeline_mesh(&shader_mesh, &camera, &mesh);
-    
+    WireframeSkeletonPipeline pipeline_skel(&shader_skel, &camera, &skel, &anim);
     /***************************my code end*************************/
     ///////////////
 
@@ -117,7 +117,7 @@ int main(void)
         processCameraInput(window, &camera);
         float curFrameTime = glfwGetTime();
         float curAnimTime = int(curFrameTime) % 5 + curFrameTime - int(curFrameTime); // so that we have a looped time from 0~5
-
+        // std::cout<<curAnimTime<<std::endl;
         ///////////////////
         // Some extra codes here 
         // todo just like some animate function?
@@ -129,7 +129,7 @@ int main(void)
         // update skeleton & mesh
         // draw mesh 
         // draw skeleton 
-        pipeline_skel.draw();
+        pipeline_skel.draw(curAnimTime);
         /***************************my code*************************/
         pipeline_mesh.draw();
         /***************************my code end*************************/

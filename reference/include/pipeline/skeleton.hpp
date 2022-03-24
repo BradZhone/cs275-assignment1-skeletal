@@ -16,6 +16,8 @@
 #include "camera/fpc.hpp"
 #include "shader/shader.hpp"
 #include "skeletal/skeleton.hpp"
+#include "skeletal/animator.hpp"
+
 
 class WireframeSkeletonPipeline
 {
@@ -36,17 +38,19 @@ private:
     Shader* shader;
     FirstPersonCamera* camera;
     Skeleton* skeleton;
+    SkeletalAnimator* anim; 
 
 public:
     WireframeSkeletonPipeline(
         Shader* _shader, 
         FirstPersonCamera* _camera,
-        Skeleton* _skel
+        Skeleton* _skel,
+        SkeletalAnimator* _anim 
     );
 
-    void draw();
+    void draw(float time);
 
 private:
     void setupIndices();
-    void updateVertices();
+    void updateVertices(float time);
 };

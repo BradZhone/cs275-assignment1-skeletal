@@ -1,10 +1,12 @@
 #include "pipeline/skeleton.hpp"
+#include "skeletal/animator.hpp"
 
 WireframeSkeletonPipeline::
 WireframeSkeletonPipeline(
     Shader* _shader, 
     FirstPersonCamera* _camera,
-    Skeleton* _skel
+    Skeleton* _skel,
+    SkeletalAnimator* _anim 
 ) {
     glGenVertexArrays(1, &this->glo.VAO); // Allocate a Vertex Array Object to manage data
     glGenBuffers(1, &this->glo.VBO); // Allocate a Vertex Buffer Object to save vertex data
@@ -25,6 +27,8 @@ WireframeSkeletonPipeline(
     this->shader = _shader;
     this->camera = _camera;
     this->skeleton = _skel;
+    this->anim = _anim;
+
 
     this->setupIndices();
 }
@@ -56,12 +60,14 @@ setupIndices() {
 }
 
 void WireframeSkeletonPipeline::
-updateVertices() {
+updateVertices(float time) {
     // get position of each joint from skeletal animator at current frame
      /****************************************My Code***************************************************/
     const auto& joints = this->skeleton->getJoints();
+    const auto& keyframes = this->anim->getKeyframes();
+    const auto& timetable = this->anim->getTimetable();
      /****************************************My Code end***************************************************/
-
+    // todo can i get the keyframes from animator here and a time stamp here and calculate a interpolation here?
     for (size_t i = 0; i < this->vertices.size(); ++i) {
         /*
             this->vertices[i].position.x = `new_x`;
@@ -69,15 +75,25 @@ updateVertices() {
             this->vertices[i].position.z = `new_z`;
         */
        /****************************************My Code***************************************************/
-        this->vertices[i].position.x = joints[i].position.x;
-        this->vertices[i].position.y = joints[i].position.y;
-        this->vertices[i].position.z = joints[i].position.z;
+        // this->vertices[i].position.x = joints[i].position.x;
+        // this->vertices[i].position.y = joints[i].position.y;
+        // this->vertices[i].position.z = joints[i].position.z;
+
+        // for (int j=0;j<timetable.ftime.size();j++)
+        // {
+        //     if (time == timetable.ftime[j])
+        //     {
+                this->vertices[i].position.x = keyframes[i][ceil(time)].positions.x;
+                this->vertices[i].position.y = keyframes[i][ceil(time)].positions.y;
+                this->vertices[i].position.z = keyframes[i][ceil(time)].positions.z;
+        //     }
+        // }
         /****************************************My Code end***************************************************/
     }
 }
 
 void WireframeSkeletonPipeline::
-draw() {
+draw(float time) {
 
     GLint previous;
     // glGetIntegerv(GL_POLYGON_MODE, &previous); // save previous drawing mode
@@ -87,7 +103,7 @@ draw() {
     glBindBuffer(GL_ARRAY_BUFFER, this->glo.VBO);
 
     // update and copy the new vertex data into VBO
-    updateVertices();
+    updateVertices(time);
     glBufferData(GL_ARRAY_BUFFER, this->vertices.size() * sizeof(VertexData), this->vertices.data(), GL_STREAM_DRAW);
 
     this->shader->use();

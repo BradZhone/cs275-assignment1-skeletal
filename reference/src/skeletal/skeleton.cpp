@@ -118,7 +118,7 @@ loadFromTinyGLTF(
         
         // Access children of the joints
         /****************************************My Code***************************************************/
-        this->joints[j_id].numChildren = curNode.children.size(); // write attJoint的numChildren属性
+        this->joints[j_id].numChildren = curNode.children.size();
 
         std::cout << "Children: ";
         for (size_t j = 0; j < curNode.children.size(); ++j) {

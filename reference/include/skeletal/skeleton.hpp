@@ -46,6 +46,7 @@ private:
 public:
     size_t getBoneNum() const { return this->joints.size(); }
     const auto& getJoints() const { return joints; }
+    const auto& getRoot() const { return root; }
 
     /** 
      * Some reference code to load data with tinygltf
